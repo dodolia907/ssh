@@ -23,9 +23,12 @@ wget https://raw.githubusercontent.com/dodolia907/ssh/main/auth.sh
 ## https://github.com/dodolia907.keys を https://github.com/[自分のGitHubアカウント名].keys に変更
 vim auth.sh
 
-## 実行権限を付与して実行
-chmod +x auth.sh
-./auth.sh
+## 実行
+bash auth.sh
+```
+アカウントを変更せずに実行する場合は以下のコマンドを実行します。
+```
+curl -s https://raw.githubusercontent.com/dodolia907/ssh/main/auth.sh | bash
 ```
 
 ## 公開鍵認証でSSH接続
