@@ -9,10 +9,15 @@ GitHubにアップロードしてある公開鍵を自動で配置するスク�
 6. Add SSH keyを選択します。
 
 ## サーバーへ公開鍵を配置
-以下の手順に従って公開鍵を配置します。
-wgetとvimなどの任意のエディタが必要です。
-ない場合はdnf install wget vimやapt install wget vimなどでインストールしてください。
+curlが必要です。インストールされていない場合は以下のコマンドを実行してください。
+```bash
+## debian
+sudo apt install curl
+## RHEL
+sudo dnf install curl
 ```
+以下の手順に従って公開鍵を配置します。
+```bash
 ## ユーザーの切り替え(公開鍵を配置したいユーザーへ)
 su [ユーザー名]
 
